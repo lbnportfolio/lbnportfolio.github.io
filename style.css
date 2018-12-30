@@ -257,7 +257,7 @@ html, body {
 #cvcontainer h2 {
     margin-bottom: 0.8em;
     font-size: 1.8em;
-    font-size: 600;
+    font-weight: 600;
 }
 #cvcontainer h3 {
     font-size: 1.4em;
@@ -303,7 +303,7 @@ html, body {
     text-align: center;
     justify-content: center;
 }
-.header ul:li {
+.header ul li {
     margin-right: 1px;
     margin-left: 1px;
 }
