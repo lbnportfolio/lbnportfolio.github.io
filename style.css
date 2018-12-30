@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    color: white;
+}
+#bgdiv {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;background-image: url("Assets/otis-redding.png");
+}
+.wrapper {
+    width: 56%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+@keyframes onLoad{
+    0% {
+        opacity: 0;
+        transform: translateY(-4%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#welcome-container {
+    animation: 2s onLoad;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#welcome-container h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3em;
+    margin-bottom: 1em;
+    position: relative;
+    color: #FFCC80;
+}
+
+
+#welcome-container p {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 2em;
+    line-height: 2em;
+}
+#welcome-container p a {
+    color: white;
+}
+@keyframes bodyLoad {
+    0% {
+    background-color: #0f0f0f;
+    background-image: url("Assets/otis-redding.png");
+    }
+    100% {
+    background-color: #ddd;
+    background-image: url("Assets/otis-redding.png");
+    }
+}
+#projektbody {
+    animation: 2s bodyLoad;
+    background-color: #ddd;
+    background-image: url("Assets/otis-redding.png");
+}
+.header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+    padding: 2em 0;
+}
+.header ul li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.header ul li:first-child {
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 1.3em;
+}
+.header a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-family: 'Work Sans', sans-serif;
+}
+@keyframes linkLoad {
+    0% {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#projekt {
+    animation: 2s ease-out linkLoad;
+}
+#projekt h2 a{
+    font-family: 'Space Mono', monospace;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+#projekt h2:hover {
+    transform: translateX(16px);
+    transition:  transform 0.8s ease-out;
+}
+
+#projekt h2 {
+    transform: translateX(0);
+    transition: transform 0.8s ease-out;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+}
+#projekt hr {
+    width: 20%;
+    height: 4px;
+    border:0;
+    background: #0f0f0f;
+}
+.body {
+    background-color: #ddd;
+    background-image: url("Assets/otis-redding.png");
+}
+.projektdiv {
+    color: white;
+    position: relative;
+}
+.projektdiv img {
+    width: 100%;
+}
+.projektdiv div {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    font-family: 'Work Sans', sans-serif;
+}
+.projektdiv h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 3em;
+    font-weight: 400;
+    color: white;
+}
+.projektdiv > p {
+    font-family: 'Work Sans', sans-serif;
+}
+.projektflex {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*align-content: space-between;*/
+}
+.projektflex p {
+    flex-grow: 1;
+    color: #0f0f0f;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+}
+.projektflex svg {
+    flex-grow: 2;
+}
+.assets {
+    max-width: 100%;
+    max-width: 100%;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+    color: #0f0f0f;
+}
+.assets p {
+    line-height: 1.6em;
+    margin-bottom: 4em;
+}
+.assets img {
+    width: 100%;
+}
+.assets h2 {
+    font-weight: 400;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 2em;
+}
+.footer {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.footer a {
+    color: #0f0f0f;
+}
+.assets div {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+}
+#framewrapper {
+    grid-column: 1 / span 2;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+#framewrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+#banners {
+    margin-top: 4em;
+}
+#egnadiv {
+    display: flex;
+    align-items: center;
+}
+.assets hr {
+    width: 100%;
+    border: 0;
+    background: #aaa;
+    height: 1px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#cvcontainer {
+    color: #0f0f0f;
+    line-height: 1.6em;
+}
+#cvcontainer h2 {
+    margin-bottom: 0.8em;
+    font-size: 1.8em;
+    font-size: 600;
+}
+#cvcontainer h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+#cvcontainer h2, h3 {
+    font-family: 'Space Mono', monospace;
+}
+#cvcontainer p {
+    font-family: 'Work Sans', sans-serif;
+}
+#cvinfo {
+    margin-bottom: 2em;
+}
+.item {
+    margin-bottom: 2em;
+}
+#kontakt {
+    color: #0f0f0f;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+#kontakt h1 {
+    font-family: 'Space Mono', monospace;
+}
+#kontakt p {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-family: 'Work Sans', sans-serif;
+}
+@media screen and (max-width: 600px) {
+.wrapper {
+    width: 80%;
+}
+.header ul {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.header ul:li {
+    margin-right: 1px;
+    margin-left: 1px;
+}
+.header ul li:first-child {
+    flex-basis: 100%;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+#welcome-container h1 {
+    font-size:2em;
+}
+#welcome-contanier p {
+    font-size: 0.8em;
+}
+#projekt h2 {
+    font-size: 1em;
+}
+.projektdiv div {
+    bottom: 1em;
+    left: 1em;
+}
+.projektdiv div p{
+    font-size: 0.5em;
+}
+.projektdiv div h2 {
+    font-size: 1em;
+}
+.assets {
+    margin-top: 1em;
+}
+.assets h2 {
+    margin-bottom: 1em;
+}
+.assets p {
+    margin-bottom: 1em;
+    text-align: center;
+}
+#egnadiv {
+    flex-direction: column;
+}
+#egnadiv:last-child {
+    flex-direction: column-reverse;
+}
+#egnadiv p {
+    font-size: 1em;
+}
+.item p {
+    font-size: 0.8em;
+}
+#cvcontainer h2 {
+    font-size: 1.2em;
+}
+#cvcontainer h3 {
+    font-size: 1em;
+}
+#banners {
+    width: 100%;
+    margin-top: 1em;
+}
+#banners img {
+    width: 100%;
+}
+.footer {
+    margin-top: 1em;
+}
+#kontakt {
+    margin-top: 2.5em;
+}
+#kontakt h1{
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+#kontakt p {
+    font-size: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+}
+@media screen and (max-width: 1024px){
+#projekt h2:hover {
+    transform: none; 
+}
+}
