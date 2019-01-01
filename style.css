@@ -4,7 +4,6 @@
 }
 html, body {
     height: 100%;
-    color: white;
 }
 #bgdiv {
     height: 100vh;
@@ -29,6 +28,7 @@ html, body {
     }
 }
 #welcome-container {
+    color: white;
     animation: 2s onLoad;
     height: 100vh;
     display: flex;
@@ -55,6 +55,7 @@ html, body {
 #credit {
     position: absolute;
     width: 100%;
+    color: white;
     bottom: 2em;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
@@ -236,7 +237,13 @@ html, body {
     border: 0;
 }
 #banners {
-    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+#banners img {
+    width: 100%;
 }
 #egnadiv {
     display: flex;
@@ -257,15 +264,15 @@ html, body {
 #cvcontainer h2 {
     margin-bottom: 0.8em;
     font-size: 1.8em;
-    font-weight: 600;
+    font-weight: 700;
 }
 #cvcontainer h3 {
     font-size: 1.4em;
     margin-bottom: 0.5em;
     font-weight: 400;
-    letter-spacing: 0.1em;
+    font-family: 'Work Sans', sans-serif;
 }
-#cvcontainer h2, h3 {
+#cvcontainer h2 {
     font-family: 'Space Mono', monospace;
 }
 #cvcontainer p {
@@ -283,18 +290,29 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 10em;
 }
 #kontakt h1 {
     font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 #kontakt p {
     margin-top: 0.6em;
     margin-bottom: 0.6em;
     font-family: 'Work Sans', sans-serif;
+    line-height: 1.6em;
 }
-@media screen and (max-width: 600px) {
+#kontakt p a {
+    color: #0f0f0f;
+}
+#influencertext {
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 2em;
+    color: #0f0f0f;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
 .wrapper {
     width: 80%;
 }
@@ -304,13 +322,13 @@ html, body {
     justify-content: center;
 }
 .header ul li {
-    margin-right: 1px;
-    margin-left: 1px;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 .header ul li:first-child {
     flex-basis: 100%;
     margin-bottom: 0.5em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 #welcome-container h1 {
     font-size:2em;
@@ -326,10 +344,10 @@ html, body {
     left: 1em;
 }
 .projektdiv div p{
-    font-size: 0.5em;
+    font-size: 1em;
 }
 .projektdiv div h2 {
-    font-size: 1em;
+    font-size: 1.8em;
 }
 .assets {
     margin-top: 1em;
@@ -369,17 +387,27 @@ html, body {
 .footer {
     margin-top: 1em;
 }
-#kontakt {
-    margin-top: 2.5em;
-}
 #kontakt h1{
     font-size: 1.2em;
     margin-bottom: 1.2em;
+    
 }
 #kontakt p {
     font-size: 1em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+}
+}
+@media screen and (max-width: 600px) {
+.projektdiv div p{
+    font-size: 0.8em;
+}
+.projektdiv div h2 {
+    font-size: 1.2em;
+}
+.header ul li {
+    margin-right: 1em;
+    margin-left: 1em;
 }
 }
 @media screen and (max-width: 1024px){
