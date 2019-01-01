@@ -356,7 +356,6 @@ html, body {
 }
 .assets p {
     margin-bottom: 1em;
-    text-align: center;
 }
 #egnadiv {
     flex-direction: column;
