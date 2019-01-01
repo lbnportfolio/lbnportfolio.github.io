@@ -296,7 +296,6 @@ html, body {
     font-weight: 700;
 }
 #kontakt p {
-    margin-top: 0.6em;
     margin-bottom: 0.6em;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.6em;
@@ -309,6 +308,7 @@ html, body {
     margin-bottom: 2em;
     color: #0f0f0f;
     line-height: 1.6em;
+    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -356,6 +356,7 @@ html, body {
 }
 .assets p {
     margin-bottom: 1em;
+    text-align: center;
 }
 #egnadiv {
     flex-direction: column;
@@ -392,20 +393,32 @@ html, body {
 }
 #kontakt p {
     font-size: 1em;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-bottom: 1em;
+    
 }
 }
 @media screen and (max-width: 600px) {
 .projektdiv div p{
+    display: none;
+}
+#projekt h2 {
     font-size: 0.8em;
+}
+.header ul li:first-child {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
 }
 .projektdiv div h2 {
     font-size: 1.2em;
 }
+.header ul {
+    flex-direction: column;
+    align-items: center;
+}
 .header ul li {
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 }
 @media screen and (max-width: 1024px){
